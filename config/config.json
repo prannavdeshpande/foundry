@@ -1,0 +1,31 @@
+{
+  "scraper": {
+    "base_url": "https://wellfound.com/jobs",
+    "max_pages": 3,
+    "delay_seconds": 2,
+    "timeout": 10,
+    "use_selenium": true,
+    "headless": true,
+    "user_agents": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    ]
+  },
+  "telegram": {
+    "enabled": true,
+    "batch_size": 5,
+    "message_format": "markdown"
+  },
+  "cover_letter": {
+    "enabled": false,
+    "model": "gpt-3.5-turbo",
+    "max_tokens": 500
+  },
+  "database": {
+    "path": "data/jobs.db"
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "data/automation.log"
+  }
+}

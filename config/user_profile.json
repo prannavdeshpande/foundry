@@ -1,0 +1,30 @@
+{
+  "skills": [
+    "Python",
+    "FastAPI",
+    "Django",
+    "PostgreSQL",
+    "Docker",
+    "AWS",
+    "React",
+    "TypeScript"
+  ],
+  "keywords": [
+    "backend",
+    "API",
+    "microservices",
+    "full-stack",
+    "startup",
+    "remote"
+  ],
+  "locations": [
+    "Remote",
+    "San Francisco",
+    "New York"
+  ],
+  "min_match_score": 50,
+  "job_types": [
+    "Full-time",
+    "Contract"
+  ]
+}
