@@ -87,7 +87,7 @@ class TelegramNotifier:
         else:
             skills_str = "See description"
         
-        message = f"""🚀 *New Job Match\\!* \\(Score: {score}/100\\)
+        message = f""" *New Job Match\\!* \\(Score: {score}/100\\)
 
 📋 *Title:* {title}
 🏢 *Company:* {company}
@@ -120,7 +120,7 @@ class TelegramNotifier:
         sent_count = 0
         
         # Send header message
-        header = f"📬 *Daily Job Alert* \\- {len(jobs)} new matches\\!\n\n"
+        header = f" *Daily Job Alert* \\- {len(jobs)} new matches\\!\n\n"
         
         # Batch jobs into groups
         for i in range(0, len(jobs), batch_size):
@@ -143,12 +143,12 @@ class TelegramNotifier:
     
     def send_summary(self, stats: Dict):
         """Send automation summary statistics."""
-        message = f"""📊 *Automation Summary*
+        message = f""" *Automation Summary*
 
-🔍 Total jobs scraped: {stats.get('scraped', 0)}
-✅ Jobs matched: {stats.get('matched', 0)}
-📨 Alerts sent: {stats.get('sent', 0)}
-⭐ Avg match score: {stats.get('avg_score', 0)}
+ Total jobs scraped: {stats.get('scraped', 0)}
+ Jobs matched: {stats.get('matched', 0)}
+ Alerts sent: {stats.get('sent', 0)}
+ Avg match score: {stats.get('avg_score', 0)}
 
 _Next run scheduled for tomorrow\\._
 """
