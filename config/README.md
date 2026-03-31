@@ -14,7 +14,7 @@ This project uses two JSON configuration files:
 
 ```mermaid
 flowchart TD
-    A[main.py] --> B[load_config()]
+    A[main.py] --> B[load_config]
     B --> C[config/config.json]
     B --> D[config/user_profile.json]
     C --> E[WellfoundScraper]
