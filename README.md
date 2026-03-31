@@ -4,7 +4,8 @@ This project implements a Wellfound job scraper that matches job listings with u
 
 ## Architecture
 
-%% High-contrast styling for good visibility in both light and dark themes
+```mermaid
+
 flowchart TD
     A[Job Scraper] --> B[Database]
     A --> C[Matcher]
@@ -20,6 +21,7 @@ flowchart TD
     class E,F external;
 
     linkStyle default stroke:#111111,stroke-width:2px;
+```
 
 ## Features
 - Job scraping from Wellfound
