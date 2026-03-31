@@ -4,21 +4,22 @@ This project implements a Wellfound job scraper that matches job listings with u
 
 ## Architecture
 
-```mermaid
-graph TD;
-    A[Job Scraper] --> B[Database];
-    A --> C[Matcher];
-    B --> D[Notifier];
-    D --> E[Telegram];
-    F[OpenAI] --> G[Cover Letter Generation];
-    style A fill:#f9f,stroke:#333,stroke-width:2px;
-    style B fill:#ccf,stroke:#333,stroke-width:2px;
-    style C fill:#cfc,stroke:#333,stroke-width:2px;
-    style D fill:#ff0,stroke:#333,stroke-width:2px;
-    style E fill:#f66,stroke:#333,stroke-width:2px;
-    style F fill:#9cf,stroke:#333,stroke-width:2px;
-    style G fill:#fcf,stroke:#333,stroke-width:2px;
-```
+%% High-contrast styling for good visibility in both light and dark themes
+flowchart TD
+    A[Job Scraper] --> B[Database]
+    A --> C[Matcher]
+    B --> D[Notifier]
+    D --> E[Telegram]
+    F[OpenAI] --> G[Cover Letter Generation]
+
+    %% Keep it monochrome and readable in any theme
+    classDef node fill:#ffffff,stroke:#111111,color:#111111,stroke-width:2px;
+    classDef external fill:#ffffff,stroke:#111111,color:#111111,stroke-dasharray: 6 4,stroke-width:2px;
+
+    class A,B,C,D,G node;
+    class E,F external;
+
+    linkStyle default stroke:#111111,stroke-width:2px;
 
 ## Features
 - Job scraping from Wellfound
